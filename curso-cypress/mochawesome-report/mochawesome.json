@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-02-27T21:24:54.232Z",
+    "end": "2024-02-27T21:24:56.104Z",
+    "duration": 1872,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6e78cdfa-7119-495f-b5c9-a7840482d1c7",
+      "title": "",
+      "fullFile": "cypress\\e2e\\register-incorrect.cy.js",
+      "file": "cypress\\e2e\\register-incorrect.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ecf716f0-f50d-46fb-972a-5c97c333a7a5",
+          "title": "Register page",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "CLick on Register with empty fields",
+              "fullTitle": "Register page CLick on Register with empty fields",
+              "timedOut": null,
+              "duration": 803,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:4200/#/home');\ncy.contains('a', 'Register now').click();\ncy.contains('button', 'Register').click();\ncy.contains('button', 'Register').click();\ncy.contains('Email is required!').should('be.visible');\ncy.contains('Full name is required!').should('be.visible');\ncy.contains('User name is required!').should('be.visible');\ncy.contains('Password is required!').should('be.visible');",
+              "err": {},
+              "uuid": "a2c16b26-b431-406f-b91c-d15c325d79c1",
+              "parentUUID": "ecf716f0-f50d-46fb-972a-5c97c333a7a5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a2c16b26-b431-406f-b91c-d15c325d79c1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 803,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
